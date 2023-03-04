@@ -94,8 +94,13 @@ main .home .h-pro{
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.5px;
-    color: #FFFFFF;
+    
+}
+
+main .home button{
     background-color: #155EEF;
+    border: none;
+    color: #FFFFFF;
     border-radius: 8px;
     padding: 10px 16px;
     margin-top: 1em;
@@ -190,4 +195,146 @@ footer .foot-logo img{
 footer .icons{
     display: flex;
     gap: 1.8em;
+}
+
+.menu{
+    display: none;
+}
+
+
+@media(max-width: 768px){
+    main .home{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        text-align: center;
+        font-size: 24px;
+    }
+    main .home h5{
+       font-size: 24px;
+    }
+    main .home h3{
+          font-size: 30px;
+    }
+
+    main .about .image{
+        display: none;
+    }
+    main .about h3{
+        font-size: 26px;
+    }
+    main .about{
+        font-size: 20px;
+    }
+    footer{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    main .home button{
+        margin-bottom: 1em;
+    }
+
+    header{
+        padding: .3em 1.5em;
+        position: relative;
+    }
+    nav{
+        display: none;
+        flex-direction: column;
+        gap: 1.5em;
+        position: absolute;
+        top: 99%;
+        right: 0;
+        background-color: #FFFFFF;
+        padding: 1.5em 3em;
+        height: 100vh;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+@media(max-width: 425px){
+    .logo img {
+        width: 60%;
+    }
+    main .home{
+        padding: 1em 1.5em;
+        font-size: 18px;
+    }
+ main .home .pic img {
+    width: 100%;
+ }
+ main .home h5{
+    font-size: 18px;
+ }
+ main .home h3{
+       font-size: 26px;
+ }
+ main .home button{
+    width: 100%;
+ }
+ main .about{
+    padding: 1em 1.5em;
+    font-size: 18px;
+ }
+ main .about h3 {
+    font-size: 24px;
+}
+ main .about .flex-btn button.hire, main .about .flex-btn button.resume{
+    width: 50%;
+  padding: 10px 6px;
+}
+footer{
+    padding: 1em ;
+    font-size: 16px;
+}
+footer .foot-logo img{
+    width: 70%;
+}
+}
+
+@media(max-width: 375px){
+   
+    main .home{
+       
+        font-size: 16px;
+    }
+
+ main .home h5{
+    font-size: 16px;
+ }
+ main .home h3{
+       font-size: 24px;
+ }
+
+ main .about{
+    font-size: 16px;
+ }
+ main .home .h-pro, main .about .flex-btn button{
+    font-size: 14px;
+ }
+
+ footer{
+   padding: 1em .6em;
+   font-size: 14px;
+  
+}
+footer .foot-logo img{
+    width: 60%;
+}
+footer .icons{
+    gap: 1.4em;
+}
+footer .icons img{
+    width: 17px;
+}
+}
+
+@media(max-width: 320px){
+  footer{
+    justify-content: center;
+   gap: 1em;
+   
+  }
 }
