@@ -216,10 +216,11 @@ footer .icons{
 .recommend .r-info{
     background-color: #FFFFFF;
     position: absolute;
-    padding:54px 40px 94px;
+    padding:50px 40px 54px;
     width: 47%;
     top: 33%;
     left: 47%;
+    z-index: 10;
 }
 
 .recommend .r-info h4{
@@ -231,7 +232,7 @@ footer .icons{
     text-align: justify;
     letter-spacing: 0.5px;
     color: #141414;
-    margin-bottom: .6em;
+    margin-bottom: .5em;
 }
 
 .recommend .r-info p{
