@@ -58,7 +58,11 @@
                 <p>With more than a decade of experience, Dolphin has become a leader in digital experiences, web design and branding. That’s not a brag, it’s a promise: to deliver tomorrow’s creative solutions - today.</p>
                 <p class="author">Joy Nneji <span>Senior Design Lead at Google</span></p>
             </div>
+            <div class="arrow">
+                <img src="arrow-up.png" alt="">
+            </div>
         </section>
+       
     </main>
     <footer>
         <div class="foot-logo">
@@ -74,4 +78,30 @@
         </div>
     </footer>
 </body>
+
+<script>
+     let nav = document.querySelector("nav")
+     let menu = document.querySelector(".menu")
+
+     menu.onclick = () =>{
+        nav.classList.toggle("n-active")
+     }
+
+     nav.onclick = () =>{
+        nav.classList.remove("n-active")
+     }
+
+     window.onscroll = () =>{
+        nav.classList.remove("n-active")
+     }
+
+
+      let arrowUp = document.querySelector(".arrow")
+
+      arrowUp.onclick = () => {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+    }
+
+</script>
 </html>

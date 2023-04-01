@@ -8,6 +8,7 @@ body{
     width: 100%;
     max-width: 1440px;
     background-color: #fff;
+    transition: 1s ease-in-out;
 }
 
 header{
@@ -266,6 +267,30 @@ footer .icons{
 
 }
 
+.arrow{
+    position: absolute;
+    z-index: 100;
+    top: 78%;
+    left: 93%;
+    animation: bounce 1s infinite;
+}
+.arrow img{
+    width: 100%;
+}
+
+@keyframes bounce {
+    0%{
+        top: 77%;
+    }
+    50%{
+        top: 80%;
+    }
+    100%{
+        top: 77%;
+    }
+    
+}
+
 
 @media(max-width: 1024px){
     main .about .image img{
@@ -329,15 +354,20 @@ footer .icons{
         position: relative;
     }
     nav{
-        display: none;
+        opacity: 0;
         flex-direction: column;
-        gap: 1.5em;
+        gap: 2.5em;
         position: absolute;
         top: 99%;
         right: 0;
         background-color: #FFFFFF;
-        padding: 1.5em 3em;
+        padding: 3.5em 3em 1.5em;
         height: 100vh;
+
+    }
+
+    .n-active{
+        opacity: 1;
     }
     .menu{
         display: block;
@@ -368,6 +398,13 @@ footer .icons{
         padding: 0;
     
 }
+
+   .arrow{
+    left: 80%;
+   }
+   .arrow img{
+    width: 100%;
+   }
 }
 
 @media(max-width: 425px){
