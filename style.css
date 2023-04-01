@@ -397,14 +397,8 @@ footer .icons{
     .recommend{
         padding: 0;
     
-}
-
-   .arrow{
-    left: 80%;
-   }
-   .arrow img{
-    width: 100%;
-   }
+} 
+   
 }
 
 @media(max-width: 425px){
@@ -457,6 +451,10 @@ footer .foot-logo img{
 .recommend .r-info p.author span::before{
     font-size: 20px;
  }
+
+ .arrow{
+    left: 85%;
+   }
 }
 
 @media(max-width: 375px){
